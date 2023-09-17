@@ -1,11 +1,11 @@
-export default function SideBar(){
+import Logo from "./logo";
+import Menu from "./menu";
 
-
-    return(
-        <aside className="w-[275px] min-h-screen bg-red-200">
-
-        SideBar
-
-        </aside>
-    )
+export default function SideBar() {
+  return (
+    <aside className="w-[272px] min-h-screen ">
+      <Logo />
+      <Menu />
+    </aside>
+  );
 }
