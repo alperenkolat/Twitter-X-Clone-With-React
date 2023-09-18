@@ -1,12 +1,9 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
-import { data } from "autoprefixer";
 import { mainMenu } from "../../../../utils/const";
+import Button from "../../../../component/button";
 
 export default function Menu() {
-  const links = [
-    { id: 1, name: "Anasayfa", activeSvg: "", NotactiveSvg: "", url: "/" },
-  ];
   return (
     <nav className="mt-0.5 mb-1">
       {mainMenu.map((menu, index) => (
@@ -34,9 +31,8 @@ export default function Menu() {
           )}
         </NavLink>
       ))}
+
+      <Button>Gönder</Button>
     </nav>
   );
 }
-<path></path>;
-<path></path>;
-<path></path>;
