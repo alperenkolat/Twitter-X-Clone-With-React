@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import { mainMenu } from "../../../../utils/const";
-import Button from "../../../../component/button";
+import More from "./more";
+import New from "./new";
 
 export default function Menu() {
   return (
     <nav className="mt-0.5 mb-1">
       {mainMenu.map((menu, index) => (
-        <NavLink to={menu.path} className="py-[3px] block group">
+        <NavLink key={index} to={menu.path} className="py-[3px] block group">
           {({ isActive }) => (
             <div
               className={classNames(
@@ -32,7 +33,8 @@ export default function Menu() {
         </NavLink>
       ))}
 
-      <Button>Gönder</Button>
+      <More />
+      <New />
     </nav>
   );
 }
