@@ -177,3 +177,35 @@ export const mainMenu = [
     },
   },
 ];
+export const topics = [
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "GIPTA",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Starlink",
+    },
+    postCount: 1540,
+  },
+  {
+    title: "Spor · Gündemdekiler",
+    topic: {
+      type: "tag",
+      value: "FenerinMaçıVar",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "DolarTL",
+    },
+    postCount: 11640,
+  },
+];
